@@ -1,0 +1,3 @@
+= asignacion
+== comparacion que solo valida valor
+=== comparacion que valida valor y tipo de dato
