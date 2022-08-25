@@ -100,13 +100,57 @@ while(usuario != "tomas"){
 }
 */
 
+//Funcion constructora con info, util cuando son muchos parametros
 
-
-for (let i = 0; i <=10; i++){
-    let juan = prompt("ingrese su voto");
-    let mensaje = `voto #${i} nombre : ${juan}`;
-alert(mensaje);
-alert("gracias por su voto");
+/*
+function Persona(info){
+    this.nombre = info.nombre;
+    this.edad = info.edad;
+    this.direccion = info.direccion;
+    this.colorCabello = info.colorCabello;
+    this.colorOjos = info.colorOjos;
 }
+
+let persona1 = new Persona({
+    nombre: "Damian",
+    edad: 34,
+    direccion: "Av",
+    colorCabello: "Negro",
+    colorOjos: "Marron",
+});
+
+console.log(persona1.colorCabello);
+
+function Perrito(nombre, edad){
+    this.nombre = nombre;
+    this.edad = edad;
+}
+
+let perrito1 = new Perrito("Firu", 3);
+let perrito2 = new Perrito("Max", 4);
+
+console.log(perrito1.nombre, perrito1.edad);
+*/
+/*
+function Producto(img, precio, nombre){
+    this.img = img;
+    this.precio = precio;
+    this.nombre = nombre;
+  }
+  
+  let producto1 = new Producto( 406000, "httpa,sdfhlkasugfojdshf","Monitor sam...");
+  
+  function Producto(tabla){
+    this.img = tabla.img;
+    this.precio = tabla.precio;
+    this.nombre = tabla.nombre;
+  }
+  
+  let producto2 = new Producto({
+    nombre: "Monitor sam...",
+    precio: 406000,
+    img: "httpa,sdfhlkasugfojdshf",
+  })
+  */
 
 
