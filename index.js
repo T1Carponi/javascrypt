@@ -152,5 +152,44 @@ function Producto(img, precio, nombre){
     img: "httpa,sdfhlkasugfojdshf",
   })
   */
+/*
+class Persona {
+  constructor(nombre, edad, direccion) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.direccion = direccion;
+  }
+
+  hablar(){
+    console.log("Hola soy " + this.nombre);
+  }
+}
+
+let persona1 = new Persona("maria", 34, "AV");
+console.log(persona1.edad);
+*/
+
+// ejemplo de stock//
+/*
+class Producto{
+  constructor(nombre, precio, cantidad){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.cantidad = cantidad;
+  }
+
+  vender(){
+    this.cantidad = this.cantidad - 1;
+  }
+}
+
+
+let producto1 = new Producto("Televisor", 100000, 5);
+console.log(producto1);
+producto1.vender();
+console.log(producto1);
+producto1.vender();
+console.log(producto1);
+*/
 
 
