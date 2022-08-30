@@ -192,4 +192,47 @@ producto1.vender();
 console.log(producto1);
 */
 
+/*
+otro ejemplo de arreglo con el objeto persona
 
+let persona = [{nombre:"John", apellido:"Doe", edad:50, colorOjos:"blue"},
+{nombre:"Juan", apellido:"Flores", edad:30, colorOjos:"verdes"},
+{nombre:"Pedro", apellido:"Gonzales", edad:35, colorOjos:"negros"}];
+*/
+/*
+const array = [];
+
+for(let i = 0; i < 3; i++){
+  let nombre = prompt("ingrese el nombre");
+  let precio = prompt("ingrese el precio");
+  let obj = {
+    nombre: nombre,
+    precio: precio
+  }
+
+  array.push(obj);
+}
+
+console.log(array);
+*/
+
+/*
+class Producto{
+  constructor(nombre, precio){
+    this.nombre = nombre;
+    this.precio = precio;
+  }
+}
+
+const array = [];
+
+for(let i = 0; i < 7; i++){
+  let nombre = prompt("ingrese el nombre");
+  let precio = prompt("ingrese el precio");
+  let obj = new Producto(nombre, precio);
+
+  array.push(obj);
+}
+
+console.log(array);
+*/
