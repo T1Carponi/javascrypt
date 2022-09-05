@@ -10,3 +10,13 @@ articulo(){
 
 
 }
+
+const array = [];
+
+for(let i = 0; i < 7; i++){
+  let modelo = prompt("ingrese el modelo");
+  let precio = prompt("ingrese el precio");
+  let obj = new Producto(modelo, precio);
+
+  array.push(obj);
+}
