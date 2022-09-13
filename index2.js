@@ -12,11 +12,12 @@ console.log(existe)
 console.log(resultado)
 console.log(resultado2) 
 
-let producto = document.getElementById("producto")
-producto.innerHTML = ""
-
-
-
+let producto = document.getElementsByClassName("card")
+console.log(card1[1].innerhtml);
+console.log(card1[2].innerhtml);
+console.log(card1[3].innerhtml);
+console.log(card1[4].innerhtml);
+console.log(card1[5].innerhtml);
 
 
 class Producto{
