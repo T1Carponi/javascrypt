@@ -11,3 +11,22 @@ const resultado2 = productos.filter((el) => el.precio < 4000)
 console.log(existe)
 console.log(resultado)
 console.log(resultado2) 
+
+let producto = document.getElementById("producto")
+producto.innerHTML = ""
+
+
+
+
+
+class Producto{
+    constructor(nombre, precio, cantidad){
+      this.nombre = nombre;
+      this.precio = precio;
+      this.cantidad = cantidad;
+    }
+  
+    vender(){
+      this.cantidad = this.cantidad - 1;
+    }
+  }
