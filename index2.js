@@ -31,3 +31,17 @@ class Producto{
       this.cantidad = this.cantidad - 1;
     }
   }
+
+  const almacenados = JSON.parse(localStorage.getItem("listaProductos"));
+  const Productos = [];
+  for (const productos of almacenados);
+producto.push(new producto("object"));
+for (const producto of productos);
+
+let carrito = []
+let carritoenls = localStorage.getItem(`carrito`)
+if (carritoenls){
+  carrito = carritoenls
+}
+rendercarrito(carrito)
+
