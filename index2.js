@@ -45,3 +45,26 @@ if (carritoenls){
 }
 rendercarrito(carrito)
 
+let btn = 
+document.getElementById("btn btn-primary")
+btn.addEventListener("click", () => {
+  Swal.fire({
+    title: 'quieres agregar este producto al carrito?',
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: 'Si',
+    denyButtonText: `No`,
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire('Saved!', '', 'success')
+    } else if (result.isDenied) {
+      Swal.fire('Changes are not saved', '', 'info')
+    }
+  })
+});
+
+
+
+
+
+
