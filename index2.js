@@ -63,6 +63,10 @@ btn.addEventListener("click", () => {
   })
 });
 
+fetch('http://127.0.0.1:5500/index.html')
+  .then(response => response.json())
+  .then(commits => alert(commits[0].author.login));
+
 
 
 
