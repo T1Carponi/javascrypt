@@ -1,195 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.sass">
-<title>Ambar</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+ <link rel="stylesheet" href="./estilo.css">
+ 
+  <title>ecommerce</title>
 </head>
 <body>
-    <header>
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="./carrito.html">carrito</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <ul class="dropdown-menu" class="carrito" class="table">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#">agregar producto</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">vaciar carrito</a></li>
+              </ul>
             </li>
+           
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
-      </nav>
-    </div>
-</header>
+      </div>
+    </nav>
+  </header>
 <h1>NUESTROS PRODUCTOS</h1>
-<div class="producto">
-<div class="card1" style="width: 18rem">
-    <svg
-      class="bd-placeholder-img card-img-top"
-      width="100%"
-      height="180"
-      xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      aria-label="Placeholder: Image cap"
-      preserveAspectRatio="xMidYMid slice"
-      focusable="false"
-    >
-      <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
-
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </p>
-      <a href="./carrito.html" id="btn btn-primary">agregar a carrito</a>
-    </div>
-  </div>
-  <div class="card2" style="width: 18rem">
-    <svg
-      class="bd-placeholder-img card-img-top"
-      width="100%"
-      height="180"
-      xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      aria-label="Placeholder: Image cap"
-      preserveAspectRatio="xMidYMid slice"
-      focusable="false"
-    >
-      <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
-
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </p>
-      <a href="./carrito.html" id="btn btn-primary">agregar a carrito</a>
-    </div>
-  </div>
-  <div class="card3" style="width: 18rem">
-    <svg
-      class="bd-placeholder-img card-img-top"
-      width="100%"
-      height="180"
-      xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      aria-label="Placeholder: Image cap"
-      preserveAspectRatio="xMidYMid slice"
-      focusable="false"
-    >
-      <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
-
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </p>
-      <a href="./carrito.html" id="btn btn-primary">agregar a carrito</a>
-    </div>
-  </div>
-  <div class="card4" style="width: 18rem">
-    <svg
-      class="bd-placeholder-img card-img-top"
-      width="100%"
-      height="180"
-      xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      aria-label="Placeholder: Image cap"
-      preserveAspectRatio="xMidYMid slice"
-      focusable="false"
-    >
-      <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
-
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </p>
-      <a href="./carrito.html" id="btn btn-primary">agregar a carrito</a>
-    </div>
-  </div>
-  <div class="card5" style="width: 18rem">
-    <svg
-      class="bd-placeholder-img card-img-top"
-      width="100%"
-      height="180"
-      xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      aria-label="Placeholder: Image cap"
-      preserveAspectRatio="xMidYMid slice"
-      focusable="false"
-    >
-      <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
-
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </p>
-      <a href="./carrito.html" id="btn btn-primary">agregar a carrito</a>
-    </div>
+<DIV id="listaDeproductos"><div class="card" style="width: 18rem;" data id="p1">
+  <img src="./imge/1200 (1).webp"card-img-top alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
   </div>
 </div>
 
+<div class="card2" data id="p2">
+  <div class="card" style="width: 18rem;">
+    <img src="./imge/1200 (2).webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="card3" data id="3">
+  <div class="card" style="width: 18rem;">
+    <img src="./imge/1200 (4).webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="./carrito.html" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="card4" data id="p4">
+  <div class="card" style="width: 18rem;">
+    <img src="./imge/1200.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="./carrito.html" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="card5" data id="p5">
+  <div class="card" style="width: 18rem;">
+    <img src="./imge/41_f15_sm_angel_bty_bottle_only_sm.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="./carrito.html" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="card6" data id="p6">
+  <div class="card" style="width: 18rem;">
+    <img src="./imge/miss-dior-.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="./carrito.html" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="card7" data id="p7">
+  <div class="card" style="width: 18rem;">
+    <img src="./imge/perfumes_dulces_mujer_20_anos_340449517_560x.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="./carrito.html" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
+    </div>
+  </div>
+</div>
+<div class="card8" data id="p8">
+  <div class="card" style="width: 18rem;">
+    <img src="./imge/Top_Chanel_perfumes-scaled.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="./carrito.html" class="btn btn-primary agregar-carrito precio">agregar al carrito</a>
+    </div>
+  </div>
+</div>
+</DIV>
 <footer>
-
+  <p>copyright 2022 tc</p>
 </footer>
+ <!-- JavaScript Bundle with Popper -->
 
-
-     <!-- JavaScript Bundle with Popper -->
-     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  
- <script src="./index2.js"></script> 
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+ <script src="./index2.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+*{
+ 
+    background-color: rgb(193, 185, 185);
+}
+
+.cards{
+ display: flex;
+ margin: 10px;   
+}
+
+.header{
+    background-color: antiquewhite;
+}
